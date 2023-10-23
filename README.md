@@ -5,7 +5,7 @@ Ce code simule un scénario de restauration dans le restaurant universitaire de 
 
     Cuisinier : Il s'occupe de préparer des repas. Lorsque le stock de repas est vide, il le remplit à nouveau.
 
-    Etudiants : Ils viennent manger dans le restaurant. Si le stock est vide, ils attendent que le cuisinier reviennent en ayant préparer de nouveyx repas.
+    Etudiants : Ils viennent manger dans le restaurant. Si le stock est vide, ils attendent que le cuisinier reviennent en ayant préparer de nouveaux repas.
 
 ## Détails Techniques :
 
