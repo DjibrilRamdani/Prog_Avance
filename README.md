@@ -1,19 +1,19 @@
-##Simulation de Restauration Universitaire
+# Simulation de Restauration Universitaire
 
 Ce code simule un scénario de restauration dans le restaurant universitaire de l'IUT d'Aix-en-Provence où un cuisinier prépare des repas et des étudiants viennent les consommer durant la pause midi.
-#Composants principaux :
+## Composants principaux :
 
     Cuisinier : Il s'occupe de préparer des repas. Lorsque le stock de repas est vide, il le remplit à nouveau.
 
     Etudiants : Ils viennent manger dans le restaurant. Si le stock est vide, ils attendent que le cuisinier reviennent en ayant préparer de nouveyx repas.
 
-#Détails Techniques :
+## Détails Techniques :
 
     - Mutex (mtx) : On l'a utilisé afin d'assurer qu'un seul étudiantpuisse prendre un repas à la fois.
 
     - Sémaphores (stockRemplie, stockVide) : On l'a utilisé pour signaler au cuisinier lorsqu'il doit cuisiner plus de repas et quand les repas sont prêts à être servis.
 
-#Comment ça fonctionne :
+## Comment ça fonctionne :
 
     - Le cuisinier attend que le stock soit vide. Une fois vide, il prépare 10 repas.
 
@@ -21,7 +21,7 @@ Ce code simule un scénario de restauration dans le restaurant universitaire de 
 
     - Une fois que les repas sont prêts, les étudiants prennent les repas.
 
-#Pour exécuter le code :
+## Pour exécuter le code :
 
     Compilez le code avec un compilateur C++ qui supporte C++11 ou supérieur.
     Exécutez le programme.
