@@ -1,25 +1,28 @@
 # Simulation de Restauration Universitaire
 
-Ce code simule un scénario de restauration dans le restaurant universitaire de l'IUT d'Aix-en-Provence où un cuisinier prépare des repas et des étudiants viennent les consommer durant la pause midi.
-## Composants principaux :
+Ce projet est une simulation d'un scénario de restauration. 
+Nous avons prit comme expemple le restaurant universitaire de l'IUT d'Aix-en-Provence où un cuisinier prépare des repas et des étudiants viennent les consommer durant la pause midi comme a notre habitude.
+## Acteurs principaux :
 
-    Cuisinier : Il s'occupe de préparer des repas. Lorsque le stock de repas est vide, il le remplit à nouveau.
+    Le cuisinier : Il s'occupe de préparer des repas et lorsque le stock de repas est vide, il le remplit à nouveau.
 
-    Etudiants : Ils viennent manger dans le restaurant. Si le stock est vide, ils attendent que le cuisinier reviennent en ayant préparer de nouveaux repas.
+    Les étudiants (nous) : Ils viennent manger dans le restaurant. Si le stock est vide, ils attendent que le cuisinier reviennent en ayant préparer de nouveaux repas.
 
-## Détails Techniques :
+## Un peu d'explications de code :
 
-    - Mutex (mtx) : On l'a utilisé afin d'assurer qu'un seul étudiantpuisse prendre un repas à la fois.
+    - Mutex : Il on été utilisé afin d'assurer qu'un seul étudiant puisse prendre un repas à la fois.
 
-    - Sémaphores (stockRemplie, stockVide) : On l'a utilisé pour signaler au cuisinier lorsqu'il doit cuisiner plus de repas et quand les repas sont prêts à être servis.
+    - Sémaphores : On a utilisés stockRemplie et stockVide afin de définir l'état du stock.
 
-## Comment ça fonctionne :
+## Comment cela fonctionne :
+
+    - Les étudiants prennent un repas. Si aucun repas est disponnible le cuisinier remplie le stock.
 
     - Le cuisinier attend que le stock soit vide. Une fois vide, il prépare 10 repas.
 
-    - Les étudiants essaient de prendre un repas. Si le stock est vide, ils le signalent au cuisinier et attendent que les repas soient prêts.
+    - Les étudiants continue de se servir.
 
-    - Une fois que les repas sont prêts, les étudiants prennent les repas.
+  
 
 ## Pour exécuter le code :
 
